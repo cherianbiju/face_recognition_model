@@ -1,8 +1,6 @@
 # FACE RECOGNITION 🎭
 
- 
-
-A project demonstrating face recognition on low-quality images using **FaceNet embeddings** and **SVM classifiers**. The project includes fine-tuning the SVM on mixed-quality embeddings to improve performance on degraded images.
+A project demonstrating face recognition on images using **FaceNet embeddings** and **SVM classifiers**. 
 <br>
 ---
 ## Project Objective
