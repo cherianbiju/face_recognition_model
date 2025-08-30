@@ -57,7 +57,7 @@ embeddings_extracttion_hq.py  ->  extract embeddings from High-quality training 
 embeddings_extraction_train_lq.py  ->  extract embeddings from train_lq
 embedding_extraction_eval_lq.py  ->  extract embeddings from eval_lq
 ```
-Input: data/train, data/train_lq, or data/eval_lq folders
+Input: data/train, data/train_lq, or data/eval_lq folders<br>
 Output: .pkl files containing embeddings and labels 
 
 <br><br>
@@ -67,8 +67,8 @@ Train a linear SVM classifier on embeddings extracted from high-quality images.
 ```
 python src/train_svm.py
 ```
-Input: HQ embeddings 
-Output: models/svm_model.pkl (HQ-trained SVM)
+Input: HQ embeddings <br>
+Output: HQ-trained SVM
 
 <br><br>
 3. Fine-Tune SVM on Mixed-Quality Embeddings
@@ -77,7 +77,7 @@ Train a new SVM on a combination of high-quality and low-quality embeddings to i
 ```
 python src/finetuning_svm.py
 ```
-Input: HQ embeddings + train_lq embeddings
+Input: HQ embeddings + train_lq embeddings<br>
 Output: models/svm_model_finetuned.pkl (fine-tuned SVM)
 
 <br><br>
@@ -89,8 +89,8 @@ python src/finetuned_svm_main_test.py
 ```
 Output:
 
-Accuracy & F1-score
-Classification report
+Accuracy & F1-score<br>
+Classification report<br>
 Confusion matrix (printed in console)
 
 <br><br>
