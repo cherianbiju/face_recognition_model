@@ -16,7 +16,7 @@ A project demonstrating face recognition on low-quality images using **FaceNet e
 ---
 
 ## Directory Structure
-
+```
 face_recognition_project/
 ├── src/ # Source code scripts
 │ ├── extract_embeddings.py
@@ -31,7 +31,7 @@ face_recognition_project/
 ├── images/ # Generated images (confusion matrices, ROC curves)
 ├── models/ # Saved SVM models (ignored in repo)
 └── README.md
-
+```
 
 ---
 
