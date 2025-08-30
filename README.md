@@ -42,14 +42,14 @@ face_recognition_project/
 
 > ⚠️ The dataset is not included in the repository.
 
-
+<br><br>
 ## Usage Instructions
 
 Follow these steps to replicate the training and evaluation pipeline for face recognition.
 
 ---
-
-### 1. Extract Embeddings
+<br><br>
+1. Extract Embeddings
 
 Use the pre-trained FaceNet model to extract embeddings from your dataset.
 ```
@@ -59,7 +59,7 @@ embedding_extraction_eval_lq.py  ->  extract embeddings from eval_lq
 ```
 Input: data/train, data/train_lq, or data/eval_lq folders
 Output: .pkl files containing embeddings and labels 
-
+<br><br>
 2. Train HQ SVM
 
 Train a linear SVM classifier on embeddings extracted from high-quality images.
@@ -68,7 +68,7 @@ python src/train_svm.py
 ```
 Input: HQ embeddings 
 Output: models/svm_model.pkl (HQ-trained SVM)
-
+<br><br>
 3. Fine-Tune SVM on Mixed-Quality Embeddings
 
 Train a new SVM on a combination of high-quality and low-quality embeddings to improve performance on degraded images.
@@ -77,7 +77,7 @@ python src/finetuning_svm.py
 ```
 Input: HQ embeddings + train_lq embeddings
 Output: models/svm_model_finetuned.pkl (fine-tuned SVM)
-
+<br><br>
 4. Evaluate SVM on Low-Quality Images
 
 Evaluate fine-tuned SVM on the eval_lq dataset.
@@ -89,7 +89,7 @@ Output:
 Accuracy & F1-score
 Classification report
 Confusion matrix (printed in console)
-
+<br><br>
 5. Plot Confusion Matrix and ROC Curves
 
 Generate visualizations for the classifier’s performance.
@@ -98,7 +98,7 @@ python src/plot_finetuned_confusion.py
 ```
 Output: PNG images in the images/ 
 
-
+<br><br>
 ### Note 📌⚡
 
 Always use the evaluation set eval_lq only for testing; do not use it in training.
