@@ -11,7 +11,7 @@ A project demonstrating face recognition on low-quality images using **FaceNet e
 - Train and evaluate a **Support Vector Machine (SVM)** classifier on high-quality (HQ) and low-quality (LQ) images.
 - Fine-tune the SVM using a mixed-quality dataset to improve classification accuracy on low-quality images.
 - Provide detailed evaluation metrics including accuracy, F1-score, and confusion matrices.
-<br>
+  
 ---
 ## Directory Structure
 ```
@@ -30,7 +30,7 @@ face_recognition_project/
 ├── models/ # Saved SVM models (ignored in repo)
 └── README.md
 ```
-<br>
+
 ---
 
 ## Dataset Instructions
