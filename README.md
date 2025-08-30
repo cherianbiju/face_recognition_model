@@ -3,7 +3,7 @@
 A project demonstrating face recognition on images using **FaceNet embeddings** and **SVM classifiers**. 
 <br>
 ---
-## Project Objective
+## PROJECT OBJECTIVE
 
 - Implement a pre-trained FaceNet model to extract discriminative embeddings from facial images.
 - Train and evaluate a **Support Vector Machine (SVM)** classifier on high-quality (HQ) and low-quality (LQ) images.
@@ -11,7 +11,7 @@ A project demonstrating face recognition on images using **FaceNet embeddings** 
 - Provide detailed evaluation metrics including accuracy, F1-score, and confusion matrices.
   
 ---
-## Directory Structure
+## DIRECTORY STRUCTURE
 ```
 face_recognition_project/
 ├── src/ # Source code scripts
@@ -34,7 +34,7 @@ face_recognition_project/
 
 ---
 
-## Dataset Instructions
+## DATASET INSTRUCTION
 
 - **High-Quality (HQ) Images:** Used to train the initial SVM.  
 - **Low-Quality (LQ) Images:** Split into:
@@ -44,7 +44,7 @@ face_recognition_project/
 > ⚠️ The dataset is not included in the repository.
 
 <br><br>
-## Usage Instructions ⚠️⚠️⚠️⚠️
+## USAGE INSTRUCTIONS 🔴
 
 Follow these steps to replicate the training and evaluation pipeline for face recognition.
 ---
@@ -103,7 +103,7 @@ python src/plot_finetuned_confusion.py
 Output: PNG images in the images/ 
 
 <br><br>
-### Note 📌⚡
+### NOTE 📌⚡
 
 Always use the evaluation set eval_lq only for testing; do not use it in training.
 
@@ -116,7 +116,7 @@ The following images compare the performance of the **HQ-trained SVM** vs the **
 |----------------|----------------|
 | ![HQ SVM Evaluation](hqsvm_evaluation.png) | ![Fine-Tuned SVM Evaluation](finetunesvm_evaluation.png) |
 
-### Observations:
+### OBSERVATIONS:
 - **HQ-trained SVM:** Lower accuracy (~47%) on low-quality images due to domain mismatch between HQ training images and LQ evaluation images.  
 - **Fine-Tuned SVM:** Significantly improved accuracy (~79%) by including low-quality embeddings during fine-tuning, demonstrating better generalization to degraded images.  
 - Overall, fine-tuning the SVM on a mix of HQ and LQ embeddings improves per-class performance and reduces misclassification, especially for identities affected by image quality degradation.
