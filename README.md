@@ -17,18 +17,21 @@ A project demonstrating face recognition on low-quality images using **FaceNet e
 ```
 face_recognition_project/
 ├── src/ # Source code scripts
-│ ├── extract_embeddings.py
-│ ├── hqsvm_training.py
-│ ├── finetune_svm.py
-│ ├── evaluate_svm.py
-│ └── plot_confusion.py
+│   ├── embeddings_extraction_hq.py
+│   ├── embeddings_extraction_train_lq.py
+│   ├── embeddings_extraction_eval_lq.py
+│   ├── train_svm.py
+│   ├── finetuning_svm.py
+│   ├── finetuned_svm_main_test.py
+│   └── plot_finetuned_confusion.py
 ├── data/ # Dataset (not included in repo)
-│ ├── train/ # High-quality training images
-│ ├── train_lq/ # Low-quality training images for fine-tuning
-│ └── eval_lq/ # Low-quality evaluation images
-├── images/ # Generated images (confusion matrices, ROC curves)
-├── models/ # Saved SVM models (ignored in repo)
+│   ├── train/ # High-quality training images
+│   ├── train_lq/ # Low-quality training images for fine-tuning
+│   └── eval_lq/ # Low-quality evaluation images
+├── images/
+├── models/ # Saved SVM models
 └── README.md
+
 ```
 
 ---
