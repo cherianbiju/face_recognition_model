@@ -110,3 +110,17 @@ Output: PNG images in the images/
 
 Always use the evaluation set eval_lq only for testing; do not use it in training.
 
+<br><br>
+## SVM Evaluation Comparison
+
+The following images compare the performance of the **HQ-trained SVM** vs the **Fine-Tuned SVM** on the low-quality evaluation set (`eval_lq`).
+
+| HQ-trained SVM | Fine-Tuned SVM |
+|----------------|----------------|
+| ![HQ SVM Evaluation](images/hqsvm_evaluation.png) | ![Fine-Tuned SVM Evaluation](images/finetunesvm_evaluation.png) |
+
+### Observations:
+- **HQ-trained SVM:** Lower accuracy (~47%) on low-quality images due to domain mismatch between HQ training images and LQ evaluation images.  
+- **Fine-Tuned SVM:** Significantly improved accuracy (~79%) by including low-quality embeddings during fine-tuning, demonstrating better generalization to degraded images.  
+- Overall, fine-tuning the SVM on a mix of HQ and LQ embeddings improves per-class performance and reduces misclassification, especially for identities affected by image quality degradation.
+
