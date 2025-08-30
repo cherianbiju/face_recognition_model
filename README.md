@@ -44,12 +44,11 @@ face_recognition_project/
 > ⚠️ The dataset is not included in the repository.
 
 <br><br>
-## Usage Instructions
+## Usage Instructions ⚠️⚠️⚠️⚠️
 
 Follow these steps to replicate the training and evaluation pipeline for face recognition.
-
 ---
-<br><br>
+<br>
 1. Extract Embeddings
 
 Use the pre-trained FaceNet model to extract embeddings from your dataset.
