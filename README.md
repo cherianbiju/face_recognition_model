@@ -117,7 +117,7 @@ The following images compare the performance of the **HQ-trained SVM** vs the **
 
 | HQ-trained SVM | Fine-Tuned SVM |
 |----------------|----------------|
-| ![HQ SVM Evaluation](images/hqsvm_evaluation.png) | ![Fine-Tuned SVM Evaluation](images/finetunesvm_evaluation.png) |
+| ![HQ SVM Evaluation](hqsvm_evaluation.png) | ![Fine-Tuned SVM Evaluation](finetunesvm_evaluation.png) |
 
 ### Observations:
 - **HQ-trained SVM:** Lower accuracy (~47%) on low-quality images due to domain mismatch between HQ training images and LQ evaluation images.  
