@@ -59,6 +59,7 @@ embedding_extraction_eval_lq.py  ->  extract embeddings from eval_lq
 ```
 Input: data/train, data/train_lq, or data/eval_lq folders
 Output: .pkl files containing embeddings and labels 
+
 <br><br>
 2. Train HQ SVM
 
@@ -68,6 +69,7 @@ python src/train_svm.py
 ```
 Input: HQ embeddings 
 Output: models/svm_model.pkl (HQ-trained SVM)
+
 <br><br>
 3. Fine-Tune SVM on Mixed-Quality Embeddings
 
@@ -77,6 +79,7 @@ python src/finetuning_svm.py
 ```
 Input: HQ embeddings + train_lq embeddings
 Output: models/svm_model_finetuned.pkl (fine-tuned SVM)
+
 <br><br>
 4. Evaluate SVM on Low-Quality Images
 
@@ -89,6 +92,7 @@ Output:
 Accuracy & F1-score
 Classification report
 Confusion matrix (printed in console)
+
 <br><br>
 5. Plot Confusion Matrix and ROC Curves
 
