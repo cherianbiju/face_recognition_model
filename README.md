@@ -5,7 +5,6 @@
 A project demonstrating face recognition on low-quality images using **FaceNet embeddings** and **SVM classifiers**. The project includes fine-tuning the SVM on mixed-quality embeddings to improve performance on degraded images.
 <br>
 ---
-<br>
 ## Project Objective
 
 - Implement a pre-trained FaceNet model to extract discriminative embeddings from facial images.
@@ -14,7 +13,6 @@ A project demonstrating face recognition on low-quality images using **FaceNet e
 - Provide detailed evaluation metrics including accuracy, F1-score, and confusion matrices.
 <br>
 ---
-<br>
 ## Directory Structure
 ```
 face_recognition_project/
@@ -32,7 +30,7 @@ face_recognition_project/
 ├── models/ # Saved SVM models (ignored in repo)
 └── README.md
 ```
-
+<br>
 ---
 
 ## Dataset Instructions
